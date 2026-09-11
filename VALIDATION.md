@@ -1,4 +1,4 @@
-# 验证记录：0.2.0
+# 验证记录：0.3.0
 
 - 本地平台：macOS，Python 3.12，Codex CLI 0.147.0，WebSocket 库 17.1。
 - 20 项自动化测试通过，覆盖旧版独立客户端和新增 attach 模式。
@@ -23,3 +23,11 @@
   "completed_monitors": 1
 }
 ```
+
+## 插件分发验证
+
+- plugin-creator 的插件格式校验通过；skill-creator 的技能校验通过。
+- 独立测试 CODEX_HOME 中，本地 marketplace add 和 plugin add 成功。
+- 插件安装缓存中的运行程序可执行，首次使用的隔离 Python 环境准备成功。
+- 从私有 GitHub 仓库通过 SSH 实际执行 marketplace add，随后安装 codex-monitor@personal 成功，版本为 0.3.0。
+- 没有修改用户当前 App 的插件配置，也没有部署到用户的远程服务器。
