@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-session-monitor"
+version = "0.3.0"
+description = "Background event and timer wakeups in the same Codex CLI conversation"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+codex-monitor = "codex_monitor:main"
+
+[tool.setuptools]
+py-modules = ["codex_monitor", "remote_monitor"]
+
+[project.optional-dependencies]
+remote = ["websockets>=15,<18"]

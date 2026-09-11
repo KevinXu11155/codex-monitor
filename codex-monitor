@@ -1,0 +1,6 @@
+#!/bin/sh
+monitor_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+if [ -x "$monitor_dir/.venv/bin/python" ]; then
+    exec "$monitor_dir/.venv/bin/python" "$monitor_dir/codex_monitor.py" "$@"
+fi
+exec python3 "$monitor_dir/codex_monitor.py" "$@"

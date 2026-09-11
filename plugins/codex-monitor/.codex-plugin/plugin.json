@@ -1,0 +1,29 @@
+{
+  "name": "codex-monitor",
+  "version": "0.3.0",
+  "description": "Wake an existing Codex Remote Control session on timers or background events.",
+  "author": {
+    "name": "KevinXu11155"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Codex Monitor",
+    "shortDescription": "Wake your existing remote session on timers and events.",
+    "longDescription": "The remote session starts a background monitor through its own shell; events return to the same App Server and thread. Existing App control and approvals are preserved.",
+    "developerName": "KevinXu11155",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Use $monitor to check this task in ten minutes.",
+      "Use $monitor to watch training until it completes.",
+      "Use $monitor to list or cancel my background watches."
+    ]
+  },
+  "repository": "https://github.com/KevinXu11155/codex-monitor",
+  "homepage": "https://github.com/KevinXu11155/codex-monitor",
+  "keywords": [
+    "monitor",
+    "remote-control",
+    "timers"
+  ]
+}

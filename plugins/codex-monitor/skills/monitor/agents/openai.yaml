@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Monitor"
+  short_description: "Wake the current Remote Control session on timers or events"
+  default_prompt: "Use $monitor to check back on this task in ten minutes."
